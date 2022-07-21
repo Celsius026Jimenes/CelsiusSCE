@@ -1,0 +1,77 @@
+
+/*
+selectores Simples 
+   1selector elemtal
+      selector universal *
+      selecctor de etiqueta -> nombre de la etiqueta 
+   2selector de atributo  
+      id-> se pone un id
+      clase ->clase del elemento
+      otros atributos
+        [href]
+        [atributo =valor]
+        [atributo^=valor]
+        [*=vaatributolor]
+        [atributo$=valor]
+        marca todas las que terminan en ese valor 
+        [atributo\=valor]
+SELECTOR4S COMPUESTOS
+    selectores compuestos
+        agrupar classcon comas para darle un mismo estilo guibo,guino2{todo xD}
+        
+    selectores combinadores
+        selector desendiente
+            --- --selecciona        todo los queestan   dento de div o de alguno otra cosa y   no los de afuera
+       selctor de hermano siguente
+       .text + h2 solo funciona con el hermano siguente 
+       ~ .text p --seleciona todoslos hermanos siguentes p 
+/*SELECTORES SIMPLES 
+{
+   background-color: rgb(139, 27, 27);
+}
+h1{
+    background-color: rgb(226, 37, 37);
+}
+p{
+    background-color: rgb(173, 128, 128);
+} 
+ #nosereek{
+    background-color: rgb(165, 22, 158);
+} 
+.title{
+    background-color: rgb(41, 160, 11);
+}
+ [href]{
+    background-color: rgb(21, 214, 47);
+}
+[href="https://google.com"]{
+    background-color: rgb(111, 113, 238);
+}
+[href^=color]{
+    agarra todos las cosasque empiesan por color
+    background-color: rgb(243, 23, 23); 
+}
+[href*=index]{
+ agarra todas las cosas que t4enga la letra index 
+    background-color: rgb(155, 22, 22);
+}
+[href$=color]{
+    background-color: rgb(18, 182, 40);
+}
+[lang|="en"]{
+    background-color: rgb(50, 32, 209);
+}  */
+
+/* SELECTORES COMPUESTOS*/
+.guion,
+.guion2{
+    background-color: rgb(46, 38, 155);
+    color: bisque;
+}
+/*
+div .title2{
+    background-color: rgb(99, 17, 17);
+}
+.title2 ~ p{
+    background-color: rgb(17, 80, 26);
+} */ 

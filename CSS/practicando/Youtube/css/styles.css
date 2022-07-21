@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: rgb(72, 73, 69);
+    height: 55px;
+}
+
+.divers{
+    width: 200px;
+}
+header .nose{
+    display: inline;
+    border: 2px solid green;
+    width: 50px;
+}
+.boton1,
+.boton2{
+    
+    font-size: 23px;
+    color: red;
+    text-decoration: none;
+    border: none;
+    background-color:rgb(72, 73, 69) ;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+/* .navegacion{
+    background-color: red;
+    text-align: center;
+} */

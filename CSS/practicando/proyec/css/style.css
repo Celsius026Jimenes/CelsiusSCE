@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap");
+
+:root {
+  --color-primary: #444cf1;
+  --color-title: #000;
+  --align-title: left;
+  --padding-container: 100px 0;
+  --width-conteiner: 90%;
+  --max-width-conteiner: 1200px;
+  --color-btn: #444cf7;
+  --text-btn: #fff;
+  --padding-btn: 20px 35px;
+  --height-shape: 18em;
+}
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #e5e5f7;
+  opacity: 1;
+  background-image: radial-gradient(#444cf7 0.75px, transparent 0.75px),
+    radial-gradient(#444cf7 0.75px, #e5e5f7 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}
+.container {
+  width: var(--width-conteiner);
+  max-width: var(--max-width-conteiner);
+  padding: var(--padding-container);
+  margin: 0 auto;
+}
+.hero {
+  height: 100vh;
+  min-width: 500px;
+  position: relative;
+  --padding-container: 0;
+}
+.hero-container {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 3fr 2fr;
+  place-items: center;
+
+  /* averiguar para que carjos sirve  PLACE ITEMS Y FR DE FRID */
+  gap: 20px;
+}
+.hero-img {
+  width: 95%;
+}
+.hero-title {
+  font-size: 4rem;
+}
+.hero-copy {
+  font-size: 1.2rem;
+  margin: 25px 0;
+}
+.hero-cta {
+  display: inline-block;
+  background-color: var(--color-btn);
+  color: #fff;
+  padding: var(--padding-btn);
+  text-align: center;
+  text-decoration: none;
+}
+.hero::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: var(--height-shape);
+  width: 100%;
+  bottom: 0;
+  left: 0;
+
+  background-color: white;
+  z-index: -1;
+  clip-path: polygon(0 100%, 100% 100%, 100% 0);
+}
+.main {
+  background-color: #fff;
+}
+.title {
+  font-size: 2.5rem;
+  text-align: var(--align-title);
+  color: var(--color-title);
+}
+.title-border::after {
+  content: "";
+  display: block;
+  width: 100px;
+  margin-top: 20px;
+  height: 4px;
+  background-color: var(--color-primary);
+}
+.cta{
+  display: inline-block;
+  background-color: var(--color-btn);
+  color: var(--text-btn);
+  padding: var(--padding-btn);
+  text-align: center;
+  text-decoration: none;
+}
+
+.instructor {
+  text-align: center;
+  border-bottom: 2px solid #ccc;
+  --padding-container: 30px 0 60px;
+}
+.instructor-container {
+  width: 70%;
+  margin: 0 auto;
+}
+.instructor-name {
+  padding: 20px 0;
+}
+.instructor-tag {
+  font-weight: 700;
+  /* para cambiar grosor de la letra */
+  color: var(--color-primary);
+  margin-bottom: 20px;
+}
+.instructor-paragraph{
+  text-align: left;
+  line-height:1.5;
+  /* representa la altura de las lineas para separar las letras de lines verticalmente */
+  font-style: italic;
+  color: #615a5a;
+}
+.instructor-img{
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  object-fit: cover;
+  /* cover se adapta al contenido y asi no se deforma la imagen y escael sont se ajusta al recuadro */
+  object-position: top;
+  /*  esto mueve la imagen dentro del contenido si quieres la parte delas izquierda left si quieres dela derecha raidh y si quieres de arriba top y asi sucesivamente */
+}
+.about{
+  display: grid;
+  grid-template-columns: 5fr 4fr;
+  place-items: center;
+
+}
+.about-course{
+  width: 90%;
+}
+.about-paragraph{
+  margin:20px 0;
+  line-height:1.5;
+  font-weight: 300;
+}
+.about-picture{
+  text-align: center;
+}
+.about-img{
+  width: 95%;
+}
+.card{
+  background-color: #f2f2f2;
+}
+.card-copy{
+  margin-top:20px;
+
+}
+.card-container{
+  width: 99%;
+  margin: 0 auto;
+  margin-top:60px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(4,1fr);
+  gap:20px;
+  grid-template-areas: 
+  " .       card1    . "
+  "card2    card1    card3"
+  "card2    card4    card3"
+  " .       card4    . ";
+}
+.card-item{
+  padding:20px;
+  background-color: #fff;
+
+}
