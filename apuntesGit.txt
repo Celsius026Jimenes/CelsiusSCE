@@ -1,0 +1,20 @@
+git commit --amend= cambiar el nombre del ultimo comentario de git y tambien los archivos que estan en el directorio ojo solo remplasa al ultimo commit  
+.gitignore = crear un archivo con este nombre paraque no lo tome encuentra el git
+dentro de .gitignore creamos un archivo con la extencion de name+.md
+git commit -m " escribimos el comentario y no serramos = luego nos da un error y debemos escribir ahi toda las linesas que queremos y al final cerramos las comillas 
+git commit-a -m "comentario"= se salta gi add y directo lo hace commit pero solo a los archivos que ya estan siendo seguidos mas no a nuevos archivos creados
+git checkout + el nombre cuando le das git status pones ese direcotio por delante --+directorio  ==== esto es cuando lo iliminas de una manera tradicional  tambien 
+git checkout + cod del punto deuna historia y master para regresar al presente
+git rm + name=ilimina del historial de git y lo quita del  git  
+git mv + name + nuevoName= cambiar el nombre de un archivo  sino lo usar ilimina el archivo  y crea otro archivo con el nuevo nombre y git no esta haciendo el seguimiento al nuevo archivo
+
+git clone url newName =  puedo cambir nombre despies de la url xD
+
+git tag = lista las eqtiquetas en orden alfaveto 
+//etique ligera como un alias etiqueta simple
+git tag+EtiquetaName= etiqueta ligera
+//etiqueta anotada
+git tag -a v1.0 -m "my version 1.0"= con -a desimos es un etiqueta anotada seguido de lo que queremos -m mas el comentario 
+git show + elComit = priduce matadatos y cambios de contenido del commit espesificado o tamebien  puede ser el nombre de alguna etiqueta 
+git tag + nombreEtiquetaAllamar+ codigo de algun punto de la historia
+git tag -l "v1.*" = busca lasetiquetas qeu coincidan con el patron  introducido en estea caso v1. y el asterisco es lo que sea mas 

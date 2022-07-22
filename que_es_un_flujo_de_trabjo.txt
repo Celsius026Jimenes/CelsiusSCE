@@ -4,3 +4,4 @@ es una recomendacion acerca del uso de git
 flujo de trabajo centralizado 
 centraliza usa un repositorio central como punto de entrada de todos los cambios del proyecto
 todos los cambios de confirman en la rama main
+
